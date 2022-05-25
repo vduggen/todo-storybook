@@ -33,9 +33,7 @@ export default {
   computed: {
     classes() {
       return {
-        'list-item TASK_INBOX': this.task.state === 'TASK_INBOX',
-        'list-item TASK_PINNED': this.task.state === 'TASK_PINNED',
-        'list-item TASK_ARCHIVED': this.task.state === 'TASK_ARCHIVED',
+        [`list-item ${this.task.state}`]: true,
       }
     },
 
