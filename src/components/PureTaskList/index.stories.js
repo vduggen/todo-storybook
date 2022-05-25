@@ -1,10 +1,10 @@
-import TaskList from "./index.vue";
+import PureTaskList from "./index.vue";
 import actionsData from "../../mocks/actionsData";
 import tasks from "../../mocks/tasks";
 
 export default {
-    component: TaskList,
-    title: "TaskList",
+    component: PureTaskList,
+    title: "PureTaskList",
     excludeStories: /.*Data$/,
     decorators: [
         () => ({ template: '<div style="margin: 3rem;"> <story /> </div>' }),
@@ -16,12 +16,12 @@ export default {
 }
 
 const Template = args => ({
-    components: { TaskList },
+    components: { PureTaskList },
     args: {
         ...args,
         ...actionsData
     },
-    template: '<TaskList v-bind="args" />',
+    template: '<PureTaskList v-bind="args" />',
 })
 
 export const Default = Template({ tasks });
