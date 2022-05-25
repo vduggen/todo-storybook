@@ -1,7 +1,6 @@
 const taskDefault = {
     id: '1',
     title: 'Default Task',
-    updatedAt: new Date(2018, 0, 1, 9, 0),
 }
 
 export const taskInbox = {
@@ -20,12 +19,12 @@ export const taskArchived = {
 }
 
 const tasks = [
-    { ...taskDefault, id: '1', title: 'Task 1' },
-    { ...taskDefault, id: '2', title: 'Task 2' },
-    { ...taskDefault, id: '3', title: 'Task 3' },
-    { ...taskDefault, id: '4', title: 'Task 4' },
-    { ...taskDefault, id: '5', title: 'Task 5' },
-    { ...taskDefault, id: '6', title: 'Task 6' },
+    { ...taskInbox, id: '1', title: 'Task 1' },
+    { ...taskInbox, id: '2', title: 'Task 2' },
+    { ...taskInbox, id: '3', title: 'Task 3' },
+    { ...taskInbox, id: '4', title: 'Task 4' },
+    { ...taskInbox, id: '5', title: 'Task 5' },
+    { ...taskInbox, id: '6', title: 'Task 6' },
 ]
 
 export default tasks;
